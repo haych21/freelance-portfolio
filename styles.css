@@ -529,47 +529,56 @@ html, body {
     height: 30px;
   }
 
-   #about {
-  padding: 50px 5%; /* fine for most phones */
+#about {
+  padding: 40px 5%;        /* slightly smaller padding for very small screens */
+  box-sizing: border-box;  /* include padding in width calculation */
+  width: 100%;             /* ensure container fits screen */
 }
 
 .about-container {
   flex-direction: column;
   align-items: center;
-  gap: 30px; /* slightly reduce for smaller screens */
-  position: relative;
+  gap: 25px;               /* reduce vertical gap for small screens */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-text {
+  width: 100%;             /* full width */
+  box-sizing: border-box;
+  padding: 0 5px;          /* small horizontal padding */
 }
 
 .about-text img {
-  width: 180px;  /* slightly smaller for very small screens */
-  height: 180px;
+  width: 160px;            /* smaller image so text and card fit */
+  height: 160px;
   margin-bottom: 15px;
   top: 0;
 }
 
 .about-text p {
-  margin-top: 0;
-  padding-left: 0;       /* remove left padding to avoid cutting text */
+  margin: 0;
+  padding: 0;              /* remove all left padding */
   text-align: center;
-  font-size: 14px;       /* safe, readable font for phones */
-  line-height: 1.6;      /* good spacing for readability */
-  max-width: 100%;        /* ensure it fits container */
-  box-sizing: border-box; /* include padding in width */
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 100%;         /* no overflow */
+  box-sizing: border-box;
+  word-break: break-word;  /* force wrapping if necessary */
 }
 
 .about-text p::before {
-  display: none; /* hide the vertical line on small screens */
+  display: none;           /* hide vertical line */
 }
 
 .about-card {
-  width: 95%;            /* almost full width */
-  max-width: 350px;      /* prevent it from overflowing */
+  width: 95%;
+  max-width: 340px;        /* slightly smaller than before */
   padding: 20px;
   margin: 0 auto;
   text-align: center;
   position: static;
-  top: auto;
-  right: auto;
+  box-sizing: border-box;
 }
 
 .about-card h3 {
@@ -580,6 +589,7 @@ html, body {
   font-size: 14px;
   line-height: 1.6;
 }
+
   .skills-inner {
     flex-direction: column;    /* stack skills vertically */
     align-items: center;       /* center all blocks */
