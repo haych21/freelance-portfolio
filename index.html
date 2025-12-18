@@ -206,7 +206,23 @@
 
 
 <script>
-  /* ---------------------------------
+/* ---------------------------------
+   RESET HOVER/FOCUS ON BACK NAVIGATION
+----------------------------------*/
+window.addEventListener("pageshow", function(event) {
+    if (event.persisted) {
+        const allCards = document.querySelectorAll('.project-card, .creation-card');
+        allCards.forEach(card => {
+            // Reset hover/focus styles
+            card.style.opacity = '1';
+            card.style.transform = card.dataset.baseTransform ? card.dataset.baseTransform : 'scale(1)';
+            card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
+            card.blur(); // remove focus
+        });
+    }
+});
+
+/* ---------------------------------
    HAMBURGER MENU TOGGLE
 ----------------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
@@ -243,7 +259,6 @@ cards.forEach(card => {
 const rightCard = document.querySelector('.about-card');
 const leftText = document.querySelector('.about-text p');
 const aboutImage = document.querySelector('.about-text img');
-
 
 let isHovering = false;
 
@@ -434,6 +449,5 @@ leftText.style.transform = "translateX(-50px)";
 aboutImage.style.opacity = "0";
 aboutImage.style.transform = "translateY(-30px)";
 </script>
-
 </body>
 </html>
