@@ -529,46 +529,57 @@ html, body {
     height: 30px;
   }
 
-    #about {
-    padding: 50px 5%;        /* reduce padding for smaller screens */
-  }
+   #about {
+  padding: 50px 5%; /* fine for most phones */
+}
 
-  .about-container {
-    flex-direction: column;   /* stack image/text and card vertically */
-    align-items: center;      /* center everything */
-    gap: 40px;                /* vertical spacing between elements */
-    position: relative;
-  }
+.about-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* slightly reduce for smaller screens */
+  position: relative;
+}
 
-  .about-text img {
-    width: 200px;             /* smaller image for mobile */
-    height: 200px;
-    top: 0;                   /* reset relative top */
-    margin-bottom: 20px;
-  }
+.about-text img {
+  width: 180px;  /* slightly smaller for very small screens */
+  height: 180px;
+  margin-bottom: 15px;
+  top: 0;
+}
 
-  .about-text p {
-    margin-top: 0;            /* remove negative margin */
-    padding-left: 10px;       /* reduce left padding for line accent */
-    text-align: center;       /* center text on mobile */
-    font-size: 15px;
-    line-height: 1.7;
-  }
+.about-text p {
+  margin-top: 0;
+  padding-left: 0;       /* remove left padding to avoid cutting text */
+  text-align: center;
+  font-size: 14px;       /* safe, readable font for phones */
+  line-height: 1.6;      /* good spacing for readability */
+  max-width: 100%;        /* ensure it fits container */
+  box-sizing: border-box; /* include padding in width */
+}
 
-  .about-text p::before {
-    left: 0;                  /* stay at the left edge of paragraph */
-    transform: none;
-  }
+.about-text p::before {
+  display: none; /* hide the vertical line on small screens */
+}
 
-  .about-card {
-    width: 90%;               /* almost full width */
-    max-width: 400px;         /* prevent it from getting too wide */
-    position: static;         /* remove absolute positioning */
-    text-align: center;       /* center content */
-    top: auto;                /* reset */
-    right: auto;              /* reset */
-  }
+.about-card {
+  width: 95%;            /* almost full width */
+  max-width: 350px;      /* prevent it from overflowing */
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  position: static;
+  top: auto;
+  right: auto;
+}
 
+.about-card h3 {
+  font-size: 18px;
+}
+
+.about-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
   .skills-inner {
     flex-direction: column;    /* stack skills vertically */
     align-items: center;       /* center all blocks */
