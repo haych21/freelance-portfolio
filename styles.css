@@ -645,18 +645,33 @@ html, body {
   }
 
   /* ---------- ABOUT ---------- */
-  .about-text p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
+.about-text {
+  width: 100%;           /* take full width */
+  padding: 0 10px;       /* small side padding */
+  box-sizing: border-box;
+}
 
-  .about-card h3 {
-    font-size: 18px;
-  }
+.about-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;    /* optional, looks cleaner on small screens */
+}
 
-  .about-card p {
-    font-size: 14px;
-  }
+.about-card {
+  width: 90%;            /* almost full width */
+  max-width: 320px;      /* prevent it from being too wide */
+  padding: 20px;
+  margin: 20px auto;     /* center below the text */
+  box-sizing: border-box;
+  text-align: center;
+  position: static;      /* stack it properly */
+}
+
+.about-container {
+  flex-direction: column;  /* stack text and card vertically */
+  align-items: center;     /* center everything horizontally */
+  gap: 20px;               /* spacing between elements */
+}
 
   /* ---------- SKILLS ---------- */
   .skill-icon p {
