@@ -236,16 +236,6 @@ cards.forEach(card => {
     card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
   });
 
-  // Reset hover styles whenever the page becomes visible
-// Reset hover styles whenever the page becomes visible
-window.addEventListener('pageshow', () => {
-  cards.forEach(card => {
-    card.style.opacity = '1';
-    card.style.transform = 'scale(1)';
-    card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
-  });
-});
-
 });
 
 /* ---------------------------------
