@@ -207,27 +207,6 @@
 
 <script>
 /* ---------------------------------
-   RESET HOVER/FOCUS ON BACK NAVIGATION
-----------------------------------*/
-window.addEventListener("pageshow", function(event) {
-    const allProjectCards = document.querySelectorAll('.project-card');
-    const allCreationCards = document.querySelectorAll('.creation-card');
-
-    allProjectCards.forEach(card => {
-        card.style.opacity = '1';
-        card.style.transform = 'scale(1)';
-        card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
-    });
-
-    allCreationCards.forEach(card => {
-        const base = card.dataset.baseTransform || 'translateX(0)';
-        card.style.opacity = '1';
-        card.style.transform = base;
-        card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
-    });
-});
-
-/* ---------------------------------
    HAMBURGER MENU TOGGLE
 ----------------------------------*/
 document.addEventListener('DOMContentLoaded', () => {
@@ -256,6 +235,17 @@ cards.forEach(card => {
     card.style.transform = 'scale(1)';
     card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
   });
+
+  // Reset hover styles whenever the page becomes visible
+// Reset hover styles whenever the page becomes visible
+window.addEventListener('pageshow', () => {
+  cards.forEach(card => {
+    card.style.opacity = '1';
+    card.style.transform = 'scale(1)';
+    card.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
+  });
+});
+
 });
 
 /* ---------------------------------
