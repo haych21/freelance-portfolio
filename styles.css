@@ -184,6 +184,7 @@ html, body {
 .project-card p {
   margin: 0;
   font-size: 14px;
+  font-weight: bold;
   color: #555;
   text-align: center;
 }
@@ -434,6 +435,7 @@ html, body {
   font-size: 14px;
   color: #555;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Hamburger hidden on desktop */
@@ -444,9 +446,6 @@ html, body {
   color: #000; /* black hamburger if shown */
 }
 
-/* -----------------------------
-   MOBILE RESPONSIVE (≤768px)
--------------------------------*/
 
 @media (max-width: 1024px) {
 
