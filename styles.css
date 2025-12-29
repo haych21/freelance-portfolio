@@ -141,7 +141,7 @@ html, body {
 
 .project-card {
   width: 230px;           /* keep width fixed */
-  height: auto;            /* let it grow/shrink with content */
+  height: 320px;            /* let it grow/shrink with content */
   background-color:#fafafa;
   border-radius: 20px;
   padding: 20px;
@@ -167,7 +167,7 @@ html, body {
 .project-card a img {
   display: block;
   width: 100%;           /* fill card width */
-  height: 200px;         /* maintain aspect ratio */    
+  height: 220px;         /* maintain aspect ratio */    
   object-fit: cover;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -391,6 +391,7 @@ html, body {
 
 .creation-card {
   width: 230px;                                /* fixed width */
+  height: 320px;
   background-color: #fafafa;
   border-radius: 20px;
   padding: 20px;
@@ -416,7 +417,7 @@ html, body {
 .creation-card a img {
   display: block;
   width: 100%;
-  height: 200px;
+  height: 220px;
   max-height: 220px;
   object-fit: cover;
   border-radius: 15px;
