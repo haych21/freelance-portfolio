@@ -519,7 +519,7 @@ html, body {
   }
 
   .project-card a img {
-    object-fit: contain; /* no cropping */
+    object-fit: cover; /* no cropping */
     height: auto;        /* scale naturally */
   }
 }
