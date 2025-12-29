@@ -517,11 +517,7 @@ html, body {
     width: 80%;             /* two cards per row on mobile */
     max-width: 300px;
   }
-
-  .project-card a img {
-    object-fit: cover; /* no cropping */
-    height: auto;        /* scale naturally */
-  }
+  
 }
 
   /* Reduce social icons spacing */
