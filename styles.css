@@ -518,6 +518,13 @@ html, body {
     max-width: 300px;
   }
 
+  .project-card a img {
+    width: 100%;       /* fill card width */
+    height: auto;      /* scale naturally to maintain aspect ratio */
+    max-height: 220px; /* optional cap so it doesn't get too tall */
+    object-fit: contain; /* ensures no cropping on mobile */
+  }
+  
   /* Reduce social icons spacing */
   #socials {
     gap: 40px;
