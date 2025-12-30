@@ -392,7 +392,7 @@ html, body {
 .creation-card {
   width: 230px;                                /* fixed width */
   height: 320px;
-  background-color: #fafafa;
+  background-color: #fff;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
