@@ -578,6 +578,51 @@ html, body {
     font-size: 14px;
     line-height: 1.6;
   }
+
+    /* SKILLS SECTION */
+  #skills {
+    padding: 50px 20px;
+  }
+
+  .skills-inner {
+    flex-direction: column;   /* stack skills vertically */
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .skill-block {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ICON */
+  .skill-icon {
+    width: 100px;            /* slightly smaller on mobile */
+    gap: 12px;
+    transform: none;         /* prevent off-screen animation */
+  }
+
+  .skill-icon img {
+    width: 100%;
+    height: auto;
+  }
+
+  .skill-icon p {
+    font-size: 16px;
+  }
+
+  /* DESCRIPTION */
+  .skill-desc {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    margin-left: 0;          /* REMOVE negative margin */
+  }
   
 }
 
