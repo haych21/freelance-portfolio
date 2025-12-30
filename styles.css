@@ -518,60 +518,64 @@ html, body {
     max-width: 300px;
   }
 
-    #about {
-    padding: 60px 5%;
-  }
+  /* -------- ABOUT SECTION (MOBILE) -------- */
 
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    position: static; /* reset absolute context */
-  }
+#about {
+  padding: 60px 5%;
+}
 
-  /* IMAGE */
-  .about-text img {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto 20px;
-    top: 0;
-  }
+.about-container {
+  flex-direction: column;     /* stack everything */
+  align-items: center;
+  gap: 30px;
+  position: static;           /* reset desktop positioning */
+}
 
-  /* TEXT */
-  .about-text p {
-    font-size: 15px;
-    line-height: 1.7;
-    margin-top: 0;
-    padding-left: 0;
-    text-align: center;
-  }
+/* ICON / IMAGE */
+.about-text img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 10px auto;
+  top: 0;                     /* remove desktop offset */
+}
 
-  .about-text p::before {
-    display: none; /* remove vertical accent line on mobile */
-  }
+/* TEXT */
+.about-text {
+  text-align: center;
+  width: 100%;
+}
 
-  /* CARD */
-  .about-card {
-    position: static; /* KEY FIX */
-    width: 100%;
-    max-width: 360px;
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-  }
+.about-text p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+}
 
-  .about-card h3 {
-    font-size: 18px;
-  }
+/* remove the vertical accent line on mobile */
+.about-text p::before {
+  display: none;
+}
 
-  .about-card .ikigai {
-    font-size: 13px;
-  }
+/* CARD */
+.about-card {
+  position: static;           /* VERY IMPORTANT */
+  width: 100%;
+  max-width: 340px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .about-card p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
+.about-card h3 {
+  font-size: 18px;
+}
+
+.about-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
   
 }
 
