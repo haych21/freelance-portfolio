@@ -517,6 +517,61 @@ html, body {
     width: 80%;             /* two cards per row on mobile */
     max-width: 300px;
   }
+
+    #about {
+    padding: 60px 5%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: static; /* reset absolute context */
+  }
+
+  /* IMAGE */
+  .about-text img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    top: 0;
+  }
+
+  /* TEXT */
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-text p::before {
+    display: none; /* remove vertical accent line on mobile */
+  }
+
+  /* CARD */
+  .about-card {
+    position: static; /* KEY FIX */
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-card h3 {
+    font-size: 18px;
+  }
+
+  .about-card .ikigai {
+    font-size: 13px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
   
 }
 
