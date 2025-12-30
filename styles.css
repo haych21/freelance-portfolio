@@ -520,7 +520,7 @@ html, body {
 
     /* ABOUT SECTION */
   #about {
-    padding: 60px 40px;
+    padding: 60px 0;
   }
 
   .about-container {
@@ -566,6 +566,8 @@ html, body {
     padding: 20px;
     margin: 0 auto;
     text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .about-card h3 {
