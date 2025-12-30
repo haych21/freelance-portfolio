@@ -497,25 +497,46 @@ html, body {
     font-size: 14px;
   }
 
-  /* Projects container adjustments */
-  #projects-section {
-    justify-content: center;  /* center cards below text */
-    padding: 30px 5% 50px 5%;
-  }
-
+    /* Container */
   .projects-container {
-    position: static;        /* remove absolute positioning */
+    position: static;       /* remove absolute positioning */
     transform: none;
-    flex-wrap: wrap;         /* wrap cards to next line if needed */
-    gap: 15px;
+    flex-wrap: wrap;        /* wrap cards to next line */
+    gap: 20px;              /* space between cards */
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* center all cards */
   }
 
+  /* Cards */
   .project-card {
-    width: 80%;             /* two cards per row on mobile */
-    max-width: 300px;
+    width: 70%;             /* smaller width for mobile */
+    max-width: 280px;       /* limit max width */
+    padding: 15px;          /* slightly smaller padding */
+    margin: 0 auto;
+  }
+
+  /* Card images */
+  .project-card a img {
+    width: 100%;            /* fill card width */
+    height: 160px;          /* slightly smaller for mobile */
+    object-fit: cover;      /* maintain aspect ratio */
+    border-radius: 15px;
+    margin-bottom: 12px;
+  }
+
+  /* Card text */
+  .project-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
   }
 
     /* ABOUT SECTION */
