@@ -1,162 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Haych's Portfolio</title>
-    <script src="main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAYCH | HOME</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <link href="https://fonts.cdnfonts.com/css/soehne" rel="stylesheet">
 </head>
+
 <body>
-   
 
-   <div class="nav-demo nav-minimal">
-        <div class="logo">H A Y C H</div>
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
+  <nav class="site-nav">
+    <div class="site-nav-logo">
+      <a href="index.html" class="site-nav-logo-link">
+        <span class="site-logo">HAYCH</span>
+      </a>
+    </div>
 
-      
-      <section class="hero-demo hero-centered">
-        <h1>HAYCH</h1>
-        <p>Create websites with consistency, speed, and confidence.</p>
+    <ul class="site-nav-links">
+      <li><a href="about.html" class="site-nav-link">About</a></li>
+      <li><a href="services.html" class="site-nav-link">Services</a></li>
+      <li><a href="work.html" class="site-nav-link">Work</a></li>
+      <li><a href="contact.html" class="site-nav-link">Contact</a></li>
+    </ul>
 
-        <button class="btn btn-primary">Get Started</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="about.html" class="mobile-menu-link">About</a></li>
+      <li><a href="services.html" class="mobile-menu-link">Services</a></li>
+      <li><a href="work.html" class="mobile-menu-link">Work</a></li>
+      <li><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="home">
+    <div class="hero-stage">
+      <section class="hero scroll-reveal">
+
+          <div class="hero-left">
+              <p class="hero-tag">FRONT-END DEVELOPER • UK</p>
+
+              <h1 class="hero-title">
+                I BUILD
+                <span class="outline">DIGITAL</span>
+                EXPERIENCES
+              </h1>
+
+              <p class="hero-description">
+                  Helping businesses turn ideas into clean,
+                  responsive and memorable websites.
+              </p>
+
+              <div class="hero-buttons">
+                  <a href="work.html" class="btn-primary">
+                      View Work
+                  </a>
+
+                  <a href="contact.html" class="btn-secondary">
+                      Let's Talk
+                  </a>
+              </div>
+          </div>
+
+          <div class="hero-scroll">
+            <span>Explore Work</span>
+            <span class="arrow">↓</span>
+          </div>
+
       </section>
-    
-
-
-<section id="about">
-  <div class="about-container">
-
-    <!-- LEFT SIDE ABOUT TEXT -->
-    <div class="about-text">
-      <img src="images/animated-about.gif" alt="">
-
-   <p>
-    I’m HAYCH — I build websites that turn ideas into tangible,<br> 
-    interactive experiences that help brands connect authentically<br> 
-    with their audience.<br><br>
-
-    Every project begins as a concept and evolves into something<br> real 
-    people can explore and engage with.<br><br>
-
-    Alongside building, I share what I learn about web development<br> to 
-    help others grow their skills, build confidence, and bring their<br> 
-    own ideas to life.
-</p>
     </div>
 
-    <!-- RIGHT SIDE: FINAL MISSION CARD -->
-    <div class="about-card">
-      <h3>My Mission</h3>
-       <span class="ikigai">生き甲斐</span>
-      <p>
-        Creating tools, websites, and content that help people learn 
-        real web development skills — empowering them to build 
-        a life with more freedom, creativity, and possibilities.
-        I aim to guide beginners, inspire brands to be 
-        authentic, and foster a community of creators 
-        who can confidently bring ideas to life. 
-      </p>
-    </div>
-     
-  </div>
-  
-</section>
+    <div class="work-preview-grid">
+ 
+        <a href="https://flipping-card-design.netlify.app/" class="project-card scroll-reveal delay-1" target="_blank" rel="noopener">
+          <div class="project-card-window">
+            <div class="project-card-bar">
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-url">flipping-card-design.netlify.app</span>
+            </div>
+            <div class="project-card-image">
+              <img src="images/project1.png" alt="Flipping Card project preview">
+            </div>
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Flipping Card</h3>
+            <p class="project-card-tag">Interactive UI · CSS Animation</p>
+          </div>
+        </a>
+ 
+        <a href="https://kawaii-squishies.netlify.app/" class="project-card scroll-reveal delay-2" target="_blank" rel="noopener">
+          <div class="project-card-window">
+            <div class="project-card-bar">
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-url">kawaii-squishies.netlify.app</span>
+            </div>
+            <div class="project-card-image">
+              <img src="images/project2.png" alt="Kawaii Squishies project preview">
+            </div>
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Kawaii Squishies</h3>
+            <p class="project-card-tag">UI Design · Front-End</p>
+          </div>
+        </a>
 
-<section id="skills">
-  <div class="skills-inner">
-    <div class="skill-block">
-      <div class="skill-icon">
-        <img src="images/html-5.png" alt="HTML">
-        <p>HTML5</p>
+        <a href="https://thecrumbfactory.netlify.app/" class="project-card scroll-reveal delay-3" target="_blank" rel="noopener">
+          <div class="project-card-window">
+            <div class="project-card-bar">
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-url">thecrumbfactory.netlify.app</span>
+            </div>
+            <div class="project-card-image">
+              <img src="images/project4.png" alt="The Crumb Factory project preview">
+            </div>
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">The Crumb Factory</h3>
+            <p class="project-card-tag">E-Commerce · JavaScript</p>
+          </div>
+        </a>
+ 
+        <a href="https://profile-cardui.netlify.app/" class="project-card scroll-reveal delay-1" target="_blank" rel="noopener">
+          <div class="project-card-window">
+            <div class="project-card-bar">
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-dot"></span>
+              <span class="project-card-url">profile-cardui.netlify.app</span>
+            </div>
+            <div class="project-card-image">
+              <img src="images/project3.png" alt="Profile UI project preview">
+            </div>
+          </div>
+          <div class="project-card-info">
+            <h3 class="project-card-title">Profile UI</h3>
+            <p class="project-card-tag">Theme Switching · Front-End</p>
+          </div>
+        </a>
+ 
       </div>
-      <p class="skill-desc">HTML is the foundation of every website.
-        It structures your content and gives the page meaning.
-        Think of it as the skeleton that everything else is built on.
+  </main>
+
+  <footer class="site-footer scroll-reveal">
+    <div class="site-footer-container">
+
+      <p class="site-footer-copy">
+        &copy; 2026 HAYCH. All rights reserved.
       </p>
-    </div>
 
-    <div class="skill-block">
-      <div class="skill-icon">
-        <img src="images/css-3.png" alt="CSS">
-        <p>CSS3</p>
+      <div class="site-footer-socials">
+        <a href="https://github.com/haych21" class="site-footer-social-link">
+          <img src="images/github.png" class="site-footer-icon" alt="GitHub">
+        </a>
+
+        <a href="https://www.instagram.com/_.haychh1" class="site-footer-social-link">
+          <img src="images/ig.png" class="site-footer-icon" alt="Instagram">
+        </a>
+
+        <a href="https://www.tiktok.com/@haychhh.1" class="site-footer-social-link">
+          <img src="images/tiktok.png" class="site-footer-icon" alt="TikTok">
+        </a>
       </div>
-      <p class="skill-desc">Cascading Style Sheets add style and personality to websites. 
-        It controls layouts, colors, and fonts for visually appealing pages. 
-        Animations enhance interactions and experiences.</p>
-    </div>
 
-    <div class="skill-block">
-      <div class="skill-icon">
-        <img src="images/js.png" alt="JS">
-        <p>JavaScript</p>
+      <div class="site-footer-meta">
+        Built with Code & Creativity
       </div>
-      <p class="skill-desc">JavaScript adds life to the web.
-        It makes pages interactive<br> and dynamic.
-        Anything that moves, reacts, or updates — that's JavaScript at work.
-      </p>
-    </div>
-  </div>
-</section>
 
-<section id="creations">
-  <div class="creations-container">
-    <div class="creation-card">
-      <a href="https://flipping-card-design.netlify.app/" target="_blank">
-        <img src="/images/project1.png" alt="Project 1">
-      </a>
-      <h3>Animated Card UI</h3>
-       <p>A bank card UI that flips on tap/hover, smoothly revealing the back for an interactive, modern experience.</p>
     </div>
-
-    <div class="creation-card">
-      <a href="https://uicolourgen.netlify.app" target="_blank">
-        <img src="/images/ui-colour-gen.png" alt="Project 2">
-      </a>
-      <h3>Colour Generator</h3>
-       <p>A UI that shows a new color each time you press the button. Quick, interactive, and visually engaging.</p>
-    </div>
-
-    <div class="creation-card">
-      <a href="https://profile-cardui.netlify.app/" target="_blank">
-        <img src="images/project3.png" alt="Project 3">
-      </a>
-      <h3>Profile UI</h3>
-        <p>A sleek profile card UI with a light/dark mode toggle, offering a clean and modern look.</p>
-    </div>
-
-    <div class="creation-card">
-      <a href="https://project3.com" target="_blank">
-        <img src="images/project1.png" alt="Project 3">
-      </a>
-      <h3>Project 3</h3>
-      <p>Short description of Project 3</p>
-    </div>
-
-    <div class="creation-card">
-      <a href="https://project3.com" target="_blank">
-        <img src="images/project1.png" alt="Project 3">
-      </a>
-      <h3>Project 3</h3>
-      <p>Short description of Project 3</p>
-    </div>
-
-    <div class="creation-card">
-      <a href="https://project3.com" target="_blank">
-        <img src="images/project1.png" alt="Project 3">
-      </a>
-      <h3>Project 3</h3>
-      <p>Short description of Project 3</p>
-    </div>
-
-  </div>
-</section>
+  </footer>
 
 </body>
 </html>

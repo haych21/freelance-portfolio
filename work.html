@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>Haych | WORK</title>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="site-nav-logo">
+      <a href="index.html" class="site-nav-logo-link">
+        <span class="site-logo">HAYCH</span>
+      </a>
+    </div>
+
+    <ul class="site-nav-links">
+      <li><a href="about.html" class="site-nav-link">About</a></li>
+      <li><a href="services.html" class="site-nav-link">Services</a></li>
+      <li><a href="work.html" class="site-nav-link">Work</a></li>
+      <li><a href="contact.html" class="site-nav-link">Contact</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="about.html" class="mobile-menu-link">About</a></li>
+      <li><a href="services.html" class="mobile-menu-link">Services</a></li>
+      <li><a href="work.html" class="mobile-menu-link">Work</a></li>
+      <li><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="work-page">
+
+<section class="work-hero scroll-reveal">
+    <p class="work-eyebrow">Selected Work</p>
+    <h1>Digital experiences <span>built with purpose.</span></h1>
+    <p class="work-intro">
+        Websites, interfaces and applications
+        created through design, development
+        and curiosity.
+    </p>
+</section>
+
+<section class="featured-work scroll-reveal">
+    <div class="work-browser">
+        <div class="browser-bar">
+            <span></span><span></span><span></span>
+        </div>
+        <video autoplay loop muted playsinline class="browser-video">
+            <source src="/images/hero-feature.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="featured-details">
+        <p class="project-number">01 — Featured Project</p>
+        <h2>Ember Coffee</h2>
+        <p>
+            A premium coffee brand website focused on visual storytelling,
+            product presentation and creating a warm digital experience.
+        </p>
+
+        <div class="stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+
+        <div class="actions">
+            <a href="https://embercoffeehouse.netlify.app/home">View Live</a>
+            <a href="https://github.com/haych21/ember-coffee">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section class="works-grid">
+
+    <article class="work-item scroll-reveal delay-1">
+        <div class="work-browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <img src="images/luma.png" alt="Luma Dashboard" class="browser-image">
+        </div>
+        <div class="work-info">
+            <p>02</p>
+            <h3>Luma Dashboard</h3>
+            <span>Dashboard UI</span>
+            <p>Analytics dashboard focused on clean data presentation and modern interface design.</p>
+            <div class="stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="actions"><a href="https://luma-study.netlify.app/">Live</a><a href="https://github.com/haych21/luma">GitHub</a></div>
+        </div>
+    </article>
+
+    <article class="work-item scroll-reveal delay-2">
+        <div class="work-browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <img src="images/store.png" alt="Modern Store">
+        </div>
+        <div class="work-info">
+            <p>03</p>
+            <h3>Studio Nine</h3>
+            <span>E-Commerce</span>
+            <p>A modern shopping experience built around product discovery and user experience.</p>
+            <div class="stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="actions"><a href="#">Live</a><a href="#">GitHub</a></div>
+        </div>
+    </article>
+
+    <article class="work-item scroll-reveal delay-1">
+        <div class="work-browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <img src="images/converse.png" alt="Converse Platform">
+        </div>
+        <div class="work-info">
+            <p>04</p>
+            <h3>Converse</h3>
+            <span>Messaging Platform</span>
+            <p>A communication interface designed around simple conversations.</p>
+            <div class="stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="actions"><a href="#">Live</a><a href="#">GitHub</a></div>
+        </div>
+    </article>
+
+    <article class="work-item scroll-reveal delay-2">
+        <div class="work-browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <img src="images/voyager.png" alt="Voyager Travels">
+        </div>
+        <div class="work-info">
+            <p>05</p>
+            <h3>Voyager Travels</h3>
+            <span>Travel Platform</span>
+            <p>A travel booking experience focused on discovery and smooth user journeys.</p>
+            <div class="stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="actions"><a href="#">Live</a><a href="#">GitHub</a></div>
+        </div>
+    </article>
+
+</section>
+
+</main>
+
+  <footer class="site-footer scroll-reveal">
+    <div class="site-footer-container">
+      <p class="site-footer-copy">&copy; 2026 HAYCH. All rights reserved.</p>
+      <div class="site-footer-socials">
+        <a href="https://github.com/haych21" target="_blank" class="site-footer-social-link">
+          <img src="images/github.png" class="site-footer-icon" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/_.haychh1" target="_blank" class="site-footer-social-link">
+          <img src="images/ig.png" class="site-footer-icon" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@haychhh.1" target="_blank" class="site-footer-social-link">
+          <img src="images/tiktok.png" class="site-footer-icon" alt="TikTok">
+        </a>
+      </div>
+      <div class="site-footer-meta">Built with Code & Creativity</div>
+    </div>
+  </footer>
+
+</body>
+</html>
